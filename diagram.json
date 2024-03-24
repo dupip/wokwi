@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "author": "Dupi Parlaungan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 47.25, "left": -574.07, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -294.14,
+      "left": -258.64,
+      "attrs": { "color": "blue", "label": "(+1)" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -133.13,
+      "left": -257.56,
+      "attrs": { "color": "blue", "label": "(-1)" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": -216.18,
+      "left": -258.57,
+      "attrs": { "color": "black", "label": "Menu" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": -291.4,
+      "left": -153.6,
+      "attrs": { "color": "green", "label": "(+0.1)" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn5",
+      "top": -132.64,
+      "left": -160.66,
+      "attrs": { "color": "green", "label": "(-0.1)" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -269.09,
+      "left": -639.6,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 113.02,
+      "left": -265.9,
+      "attrs": { "temperature": "37.6", "humidity": "52.5" }
+    },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": -180.14, "left": -754.15, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay2", "top": -333.58, "left": 29.48, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay3", "top": -231.08, "left": 34.42, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay4", "top": -108.61, "left": 42.65, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay5", "top": 8.4, "left": 39.04, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay6", "top": 134.2, "left": 33.31, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": 369.53,
+      "left": -173.78,
+      "attrs": { "label": "NTC 2pin" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn6",
+      "top": -215.13,
+      "left": -160.63,
+      "attrs": { "color": "black", "label": "Set" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex1",
+      "top": -273.9,
+      "left": 49.44,
+      "attrs": { "text": "Relay 1: Motor Utama" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex2",
+      "top": 447.16,
+      "left": -138.12,
+      "attrs": { "text": "NTC 2 Pin NTC 10K B3950" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex3",
+      "top": -91.9,
+      "left": -753.99,
+      "attrs": { "text": "RTC Jam Sisem\nPCF8563 add: 0x51" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex4",
+      "top": -166.6,
+      "left": 53.18,
+      "attrs": { "text": "Relay 2: Pemanas Udara" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex5",
+      "top": -44.15,
+      "left": 58.6,
+      "attrs": { "text": "Relay 3: Pemanas Air" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex6",
+      "top": 74.12,
+      "left": 55.66,
+      "attrs": { "text": "Relay 4: Kipas perata \nsuhu/kelembaban" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -16,
+      "left": -786.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex7",
+      "top": 57.6,
+      "left": -768,
+      "attrs": { "text": "Sensor MQ135 (VOC)" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex8",
+      "top": 209.35,
+      "left": 50.38,
+      "attrs": { "text": "Relay 5: Kipas udara segar" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex9",
+      "top": 65,
+      "left": -274.72,
+      "attrs": { "text": "DHT22 #01\ndiatas rak telur" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex10",
+      "top": 475.61,
+      "left": -135.95,
+      "attrs": { "text": "Suhu Air" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex11",
+      "top": -335.81,
+      "left": 262.19,
+      "attrs": { "text": "Motor Utama\nUntuk membalik telur\nMenyala secara rutin jika MOTOR=ON" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex12",
+      "top": -226.02,
+      "left": 264.51,
+      "attrs": { "text": "Pemanas udara otomatis menyala\njika suhu udara dibawah target" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex13",
+      "top": 67.42,
+      "left": -145.37,
+      "attrs": { "text": "DHT22 #02\ndibawah rak telur" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht2",
+      "top": 114.29,
+      "left": -121.69,
+      "attrs": { "temperature": "37.3", "humidity": "52.5" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr2",
+      "top": 377.6,
+      "left": -776.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "tex14",
+      "top": 441.6,
+      "left": -758.4,
+      "attrs": { "text": "Sensor Udara Luar\nMQ135 (VOC)" }
+    }
+  ],
+  "connections": [
+    [ "uno:5V", "lcd1:VCC", "red", [ "v35.25", "h-369.3", "v-482.67" ] ],
+    [ "uno:GND.2", "lcd1:GND", "black", [ "v44.09", "h-387.64", "v-260.29" ] ],
+    [ "uno:GND.2", "rtc1:GND", "black", [ "v43.95", "h-388.54", "v-389.11" ] ],
+    [ "uno:5V", "rtc1:5V", "red", [ "v35.5", "h-369.18", "v-377.83" ] ],
+    [ "uno:A5", "rtc1:SCL", "green", [ "v72.15", "h-497.1", "v-444.09" ] ],
+    [ "uno:A5", "lcd1:SCL", "green", [ "v73.56", "h-497.1", "v-341.18" ] ],
+    [ "uno:A4", "rtc1:SDA", "gold", [ "v65.1", "h-480.55", "v-432.81" ] ],
+    [ "uno:A4", "lcd1:SDA", "gold", [ "v65.1", "h-479.14", "v-482.16" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v46.93", "h-163.17" ] ],
+    [ "dht1:GND", "uno:GND.2", "black", [ "v53.54", "h-182.47" ] ],
+    [ "uno:6", "relay2:IN", "blue", [ "v-45.57", "h377.3", "v-152.54" ] ],
+    [ "uno:5", "relay3:IN", "green", [ "v-35.41", "h377.6", "v-83.07" ] ],
+    [ "uno:4", "relay4:IN", "gold", [ "v-26.38", "h375.1", "v-14.57" ] ],
+    [ "uno:3", "relay5:IN", "orange", [ "v-17.35", "h362.8", "v57.32" ] ],
+    [ "uno:2", "relay6:IN", "red", [ "v-11.06", "h344.76", "v130.85" ] ],
+    [ "btn1:2.l", "uno:13", "yellow", [ "h-18.47", "v181.01", "h-167.77" ] ],
+    [ "uno:7", "dht1:SDA", "violet", [ "v-61.99", "h101.09", "v257.45", "h42.58" ] ],
+    [ "btn3:2.l", "uno:12", "limegreen", [ "h-10.17", "v111.65", "h-172.18" ] ],
+    [ "btn2:2.l", "uno:11", "magenta", [ "h-5.16", "v39.43", "h-162.54" ] ],
+    [ "btn5:2.r", "uno:10", "purple", [ "h9.89", "v58.65", "h-332.35" ] ],
+    [ "ntc1:GND", "uno:GND.2", "black", [ "h9.98", "v-54.19", "h-374.02" ] ],
+    [ "ldr1:AO", "uno:A1", "#8f4814", [ "h13.17", "v232.54", "h236.99" ] ],
+    [ "ldr1:VCC", "uno:5V", "red", [ "h23.17", "v253.58", "h136.91" ] ],
+    [ "ldr1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "btn4:2.r", "uno:9", "white", [ "h31.43", "v230.9", "h-15.97" ] ],
+    [ "btn6:2.r", "uno:A3", "orange", [ "h85.25", "v477.21", "h-328.72", "v-55.33" ] ],
+    [ "dht2:SDA", "uno:8", "gray", [ "v23.14", "h-60.99", "v-270.23", "h-138.05" ] ],
+    [ "dht2:VCC", "uno:5V", "red", [ "v45.21", "h-168.25" ] ],
+    [ "dht2:GND", "uno:GND.2", "black", [ "v51.74", "h-165.7" ] ],
+    [ "ntc1:VCC", "uno:VIN", "red", [ "h64.12", "v-45.45", "h-360.56" ] ],
+    [ "ntc1:OUT", "uno:A0", "purple", [ "h76.33", "v-86.81", "h-394.01" ] ],
+    [ "ldr2:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "ldr2:GND", "uno:GND.2", "black", [ "h0" ] ],
+    [ "ldr2:AO", "uno:A2", "green", [ "h0" ] ],
+    [ "btn6:1.r", "dht2:GND", "black", [ "v0.53", "h74.43", "v460.8" ] ],
+    [ "uno:GND.1", "btn2:1.r", "black", [ "v-104.25", "h285.77", "v-57.6" ] ],
+    [ "uno:GND.1", "btn5:1.l", "black", [ "v-104.25", "h285.77", "v-57.6" ] ],
+    [ "uno:GND.1", "btn3:1.r", "black", [ "v-104.25", "h285.77", "v-144" ] ],
+    [ "uno:GND.1", "btn1:1.r", "black", [ "v-104.25", "h285.77", "v-220.8" ] ],
+    [ "uno:GND.1", "btn4:1.l", "black", [ "v-104.25", "h285.77", "v-153.6" ] ]
+  ],
+  "dependencies": {}
+}
